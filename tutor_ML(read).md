@@ -154,3 +154,102 @@ type nul > main.py
 Buka editor teks seperti Notepad atau Visual Studio Code dan simpan file dengan nama `main.py` di direktori proyek Anda.
 
 Silakan pilih opsi yang paling nyaman atau sesuai dengan preferensi Anda. Setelah file `main.py` dibuat, Anda dapat mengeditnya sesuai dengan kebutuhan proyek Anda.*
+
+**Dokumentasi untuk Command Terakhir:**
+
+1. **Melihat Daftar Image Docker:**
+   Untuk melihat daftar image Docker yang ada pada sistem, gunakan perintah berikut:
+
+   ```bash
+   docker images
+   ```
+   Output dari perintah ini akan menampilkan informasi tentang setiap image, termasuk nama, tag, ID, ukuran, dan waktu pembuatan.
+
+   *Contoh Dokumentasi:*
+   ```plaintext
+   ## Melihat Daftar Image Docker
+
+   Untuk melihat daftar image Docker yang terinstal pada sistem, gunakan perintah berikut:
+
+   ```bash
+   docker images
+   ```
+
+   Output perintah ini akan memberikan informasi rinci tentang setiap image, termasuk nama, tag, ID, ukuran, dan waktu pembuatan.
+   ```
+
+2. **Menjalankan Container dari Image:**
+   Untuk menjalankan container dari image Docker, gunakan perintah berikut:
+
+   ```bash
+   docker run -it nama_image
+   ```
+   Pastikan untuk menggantikan `nama_image` dengan nama image yang ingin Anda jalankan. Perintah ini membuka shell interaktif di dalam container.
+
+   *Contoh Dokumentasi:*
+   ```plaintext
+   ## Menjalankan Container dari Image
+
+   Untuk menjalankan container dari image Docker, gunakan perintah berikut:
+
+   ```bash
+   docker run -it nama_image
+   ```
+
+   Pastikan untuk menggantikan `nama_image` dengan nama image yang ingin Anda jalankan. Perintah ini akan membuka shell interaktif di dalam container.
+   ```
+
+3. **Melihat Output Proses Pembuatan:**
+   Saat membangun image Docker, untuk melihat output dari setiap langkah dalam Dockerfile, gunakan perintah `docker build` dengan opsi `-t`:
+
+   ```bash
+   docker build -t nama_image .
+   ```
+   Pastikan untuk menggantikan `nama_image` dengan nama yang sesuai. Perintah ini memberikan output dari setiap langkah dalam proses pembuatan.
+
+   *Contoh Dokumentasi:*
+   ```plaintext
+   ## Melihat Output Proses Pembuatan
+
+   Saat membangun image Docker, untuk melihat output dari setiap langkah dalam Dockerfile, gunakan perintah berikut:
+
+   ```bash
+   docker build -t nama_image .
+   ```
+
+   Pastikan untuk menggantikan `nama_image` dengan nama yang sesuai. Perintah ini akan memberikan output yang mencakup langkah-langkah dalam proses pembuatan image.
+   ```
+   **Lanjutan Dokumentasi:**
+
+4. **Memeriksa Hasil Instalasi Dependensi dalam Container:**
+   Setelah menjalankan container, Anda dapat memeriksa hasil instalasi dependensi atau paket yang ditentukan dalam Dockerfile. Gunakan perintah berikut untuk masuk ke dalam container:
+
+   ```bash
+   docker exec -it container_id /bin/bash
+   ```
+   Gantilah `container_id` dengan ID atau nama container yang sedang berjalan. Setelah itu, Anda dapat menjalankan perintah di dalam container untuk memeriksa hasil instalasi.
+
+   *Contoh Dokumentasi:*
+   ```plaintext
+   ## Memeriksa Hasil Instalasi Dependensi dalam Container
+
+   Setelah menjalankan container, Anda dapat memeriksa hasil instalasi dependensi atau paket yang ditentukan dalam Dockerfile. Gunakan perintah berikut untuk masuk ke dalam container:
+
+   ```bash
+   docker exec -it container_id /bin/bash
+   ```
+
+   Gantilah `container_id` dengan ID atau nama container yang sedang berjalan. Setelah itu, Anda dapat menjalankan perintah di dalam container untuk memeriksa hasil instalasi.
+   ```
+
+5. **Uji Aplikasi atau Layanan dalam Container:**
+   Setelah menjalankan container, uji aplikasi atau layanan yang diimplementasikan di dalamnya. Gunakan perintah atau skenario uji yang sesuai dengan proyek Anda dan pastikan semuanya berfungsi seperti yang diharapkan.
+
+   *Contoh Dokumentasi:*
+   ```plaintext
+   ## Uji Aplikasi atau Layanan dalam Container
+
+   Setelah menjalankan container, pastikan untuk menguji aplikasi atau layanan yang diimplementasikan di dalamnya. Gunakan perintah atau skenario uji yang sesuai dengan proyek Anda dan pastikan semuanya berfungsi seperti yang diharapkan.
+   ```
+
+Dengan langkah-langkah ini, Anda dapat memahami dan menggunakan image Docker yang telah Anda bangun. Pastikan untuk menyesuaikan dokumentasi ini dengan kebutuhan dan detail spesifik proyek Anda.
