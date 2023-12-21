@@ -38,3 +38,13 @@ RUN mkdocs build
 FROM --platform=$TARGETPLATFORM nginx:alpine
 COPY --from=app-zip-creator /app.zip /usr/share/nginx/html/assets/app.zip
 COPY --from=build /app/site /usr/share/nginx/html
+
+FROM python:3.8
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+CMD ["python", "main.py"]
